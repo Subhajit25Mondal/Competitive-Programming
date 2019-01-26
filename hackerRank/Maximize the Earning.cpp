@@ -12,8 +12,14 @@ int main(int argc, char const *argv[])
             int tem; cin>>tem;
             a.push_back(tem);
         }
-        int cnt = 0, max = 0;
-        
+        int cnt = 1, max = a[0];
+        for(int j=1;j<n;j++){
+            if(a[j]>max){
+                max=a[j];
+                cnt++;
+            }
+        }
+        cout<<cnt*k<<endl;
     }
     
     return 0;
