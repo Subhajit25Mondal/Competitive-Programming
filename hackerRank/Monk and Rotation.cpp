@@ -15,9 +15,14 @@ int main(int argc, char const *argv[])
 
         for(int j = 0; j < b; j++)
         {
-            int k = a[n-1-j];
+            int k = a[a.size()-1];
             a.pop_back();
             a.insert(a.begin(),k);
+        }
+        
+        for(int j = 0; j < n; j++)
+        {
+            cout<<a[j]<<" ";
         }
         
         
