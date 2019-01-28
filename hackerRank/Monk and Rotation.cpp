@@ -25,6 +25,7 @@ int main(int argc, char const *argv[])
             cout<<a[j]<<" ";
         }
         
+        cout<<endl;
         
     }
     
