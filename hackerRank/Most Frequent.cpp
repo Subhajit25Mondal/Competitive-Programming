@@ -15,21 +15,23 @@ int main(int argc, char const *argv[])
         b.push_back(temp);
     }
     
-    int cnt=1, max = 0, max_n=0;
     sort(a.begin(),a.end());
     vector <int>:: iterator it;
     it = std::unique(a.begin(),a.end());
 
     a.resize(std::distance(a.begin(), it)); 
-    int num = 0;
+    int num = 0, max = 0;
 
     for(int i = 0; i < a.size(); i++)
     {
         int vv = count(b.begin(),b.end(),a[i]);
         if(vv > max){
             num = a[i];
+            max = vv;
         }
     }
+
+    cout<<num;
     
 
     return 0;
