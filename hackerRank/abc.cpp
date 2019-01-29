@@ -21,7 +21,15 @@ int main(int argc, char const *argv[])
     it = std::unique(a.begin(),a.end());
 
     a.resize(std::distance(a.begin(), it)); 
+    int num = 0;
 
+    for(int i = 0; i < a.size(); i++)
+    {
+        int vv = count(b.begin(),b.end(),a[i]);
+        if(vv > max){
+            num = a[i];
+        }
+    }
     
 
     return 0;
