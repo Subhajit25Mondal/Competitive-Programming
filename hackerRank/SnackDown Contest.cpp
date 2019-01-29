@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<bits/stdc++.h> 
+#include<algorithm>
 using namespace std;
 int main(int argc, char const *argv[])
 {
@@ -24,7 +25,7 @@ int main(int argc, char const *argv[])
             a.push_back(temp);
         }
 
-        for
+        it = std::unique(a.begin(),a.end());
         
         
     }
