@@ -10,6 +10,7 @@ int main(int argc, char const *argv[])
     cin>>t;
     for(int i = 0; i < t; i++)
     {
+        int check = -1;
         int pr; cin>>pr;
         int p; cin>>p;
         vector <int> a;
@@ -26,6 +27,26 @@ int main(int argc, char const *argv[])
         }
 
         it = std::unique(a.begin(),a.end());
+        a.resize(std::distance(a.begin(), it));
+        a.insert(a.begin(),-1);
+
+        for(int j = 1; i <= pr; j++)
+        {
+            if(a[j]!=j){
+                check = 0;
+            }
+        }
+
+        if (check == 0) {
+            cout<<"NO"<<endl;
+        }
+        else
+        {
+            cout<<"YES"<<endl;
+        }
+        
+        
+        
         
         
     }
