@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
         a.push_back(temp);
     }
 
-    rotate(a.begin(),a.begin()+r,a.end());
+    rotate(a.begin(),a.begin()+r,a.end());             //NEW FUNCTION 
     for(int i = 0; i < n; i++)
     {
         cout<<a[i]<<" ";
