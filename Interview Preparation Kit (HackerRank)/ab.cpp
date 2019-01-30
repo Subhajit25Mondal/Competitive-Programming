@@ -12,6 +12,13 @@ int main(int argc, char const *argv[])
         int temp; cin>>temp;
         a.push_back(temp);
     }
+
+    rotate(a.begin(),a.begin()+r,a.end());
+    for(int i = 0; i < n; i++)
+    {
+        cout<<a[i]<<" ";
+    }
+    
     
     return 0;
 }
